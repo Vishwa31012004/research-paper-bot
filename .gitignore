@@ -1,0 +1,49 @@
+# ─────────────────────────────────────────────────────────────
+# .gitignore
+# Files and folders that should NEVER be pushed to GitHub.
+#
+# WHY?
+#   .env files contain API keys — if pushed, anyone can steal them.
+#   venv/ and node_modules/ are huge folders others recreate locally.
+# ─────────────────────────────────────────────────────────────
+
+# ── Python ────────────────────────────────────────────────────
+# Virtual environment — recreated with: pip install -r requirements.txt
+venv/
+env/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# ── Environment variables — NEVER commit these ────────────────
+.env
+.env.local
+.env.production
+.env.development
+
+# ── Node / React ──────────────────────────────────────────────
+# Dependencies — recreated with: npm install
+node_modules/
+# React build output — recreated with: npm run build
+frontend/build/
+
+# ── OS files ──────────────────────────────────────────────────
+.DS_Store        # Mac folder metadata
+Thumbs.db        # Windows thumbnail cache
+desktop.ini      # Windows folder settings
+
+# ── Editor files ──────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# ── Logs ──────────────────────────────────────────────────────
+*.log
+npm-debug.log*
