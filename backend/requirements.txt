@@ -1,0 +1,17 @@
+# requirements.txt — Day 3
+# Install: pip install -r requirements.txt
+
+# Web framework
+fastapi==0.136.1
+
+# ASGI server
+uvicorn==0.47.0
+
+# HTTP library (for Semantic Scholar, arXiv, HuggingFace API calls)
+requests==2.32.3
+
+# Data validation
+pydantic==2.13.4
+
+# Read .env file
+python-dotenv==1.2.2
